@@ -1,11 +1,12 @@
-import defs.Representation as representation
+import defs.Representation as Representation
+
 
 class Letter:
     def __init__(self, row: int, col: int) -> None:
         self.row = row
         self.col = col
         self.pos = (self.row, self.col)
-        self.representation = representation.EMPTY
+        self.representation = Representation.EMPTY
     
     def get_pos(self) -> tuple[int, int]:
         return self.pos
@@ -16,5 +17,5 @@ class Letter:
     def get_representation(self) -> str:
         return self.representation
     
-    def set_representation(self, representation: representation) -> None:
-        self.representation = representation
+    def set_representation(self, repr: Representation) -> None:
+        self.representation = repr
