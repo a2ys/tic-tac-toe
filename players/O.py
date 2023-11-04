@@ -1,4 +1,4 @@
-import Letter
+import players.Letter as Letter
 import defs.Representation as representation
 
 class O(Letter.Letter):
